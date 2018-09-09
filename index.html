@@ -1,0 +1,243 @@
+<html>
+<head>
+    <title>CS301 Finals</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>CS301 - P1 | FINALS</h1>
+        <h1>Problem #1</h1>
+        <p>Write a program that will compute the product of two positive integers (firstno and secondno) by adding them repeatedly. This means adding firstno to itself secondno times.</p>
+        <form id="problem1">
+            <label for="first-number">First Number</label>
+            <input type="number" name="first-number">
+            <label for="second-number">Second Number</label>
+            <input type="number" name="second-number">
+            <input type="button" value="Submit" onclick="problem1()">
+        </form>
+        <div class="result" id="result1">Result: </div>
+        <h1>Problem #2</h1>
+        <p>Modify exercise #1 and allow negative numbers as inputs to be multiplied. Hint take absolute values first then use condition statements.</p>
+        <form id="problem2">
+            <label for="first-number">First Number</label>
+            <input type="number" name="first-number">
+            <label for="second-number">Second Number</label>
+            <input type="number" name="second-number">
+            <input type="button" value="Submit" onclick="problem2()">
+        </form>
+        <div class="result" id="result2">Result: </div>
+        <h1>Problem #3</h1>
+        <p>Write a program that will compute the qoutient (including the remainder) of two positive integers (firstno divided by secondno) by subtracting them repeatedly. This means subtracting firstno to secondno repeatedly until the difference is less than secondno.</p>
+        <form id="problem3">
+            <label for="first-number">First Number</label>
+            <input type="number" name="first-number">
+            <label for="second-number">Second Number</label>
+            <input type="number" name="second-number">
+            <input type="button" value="Submit" onclick="problem3()">
+        </form>
+        <div class="result" id="result3">Result: </div>
+        <h1>Problem #4</h1>
+        <p>Write a program that will add all prime number by letting the user specify the range of number to process.</p>
+        <form id="problem4">
+            <label for="first-number">First Number</label>
+            <input type="number" name="first-number">
+            <label for="second-number">Second Number</label>
+            <input type="number" name="second-number">
+            <input type="button" value="Submit" onclick="problem4()">
+        </form>
+        <div class="result" id="result4">Result: </div>
+        <h1>Problem #5</h1>
+        <p>Write a program that gets the Fibonacci of a number read from the user. The Fibonacci number sequence begins with 1,1 then each succeeding number in the sequence is the sum of the previous ones. For example, an input of 5 will produce 1,1,2,3,5 and an input of 8 will produce 1,1,2,3,5,8,13,21 and an input of 2 will produce 1,1.</p>
+        <form id="problem5">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem5()">
+        </form>
+        <div class="result" id="result5">Result: </div>
+        <h1>Problem #6</h1>
+        <p>Write a program that will compute for the factorial of a supplied number. The factorial of the number if the product of those numbers starting from 1 to supplied number.</p>
+        <form id="problem6">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem6()">
+        </form>
+        <div class="result" id="result6">Result: </div>
+        <h1>Problem #7</h1>
+        <p>An integer is perfect if it is the sum of its proper divisors. For example. 6 = 1 + 2 + 3, 28 = 1 + 2 + 4 + 7 + 14. Write a program that determines whether or not an integer input from a terminal is perfect.</p>
+        <form id="problem7">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem7()">
+        </form>
+        <div class="result" id="result7">Result: </div>
+        <h1>Problem #8</h1>
+        <p>Write a program that will derive the sum of series of a number. For example, an input of 5 will produce "(1 + 2 + 3 + 4 + 5 = 15)".</p>
+        <form id="problem8">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem8()">
+        </form>
+        <div class="result" id="result8">Result: </div>
+        <h1>Problem #9</h1>
+        <p>Write a program that will derive the sum of series of number. For example, an input of 5 will produce "55(1 + 2 + 3 + 4 + 5 = 55)"</p>
+        <form id="problem9">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem9()">
+        </form>
+        <div class="result" id="result9">Result: </div>
+        <h1>Problem #10</h1>
+        <p>Write a program that will output the sum of the powers from 1 to supplied number. For example, input of 4 will produce 288 (1 + 2 + 3 + 4 = 288)</p>
+        <form id="problem10">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem10()">
+        </form>
+        <div class="result" id="result10">Result: </div>
+        <h1>Problem #11</h1>
+        <p>Write a program that reverses the input number. Formulate an equation to come up with the answer (Apply the loop statements in your solutions). For example, an input of 1238 will produce 8321.</p>
+        <form id="problem11">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem11()">
+        </form>
+        <div class="result" id="result11">Result: </div>
+        <h1>Problem #12</h1>
+        <p>Write a program to convert a number to an english equivalent string formed from the digits. For example, 123 represented by "One two Three" and 4017 is represented by "Four zero one seven".</p>
+        <form id="problem12">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem12()">
+        </form>
+        <div class="result" id="result12">Result: </div>
+        <h1>Problem #13</h1>
+        <p>Write a program to convert a number to an english equivalent string formed from the reversed digits for example, 123 represented by "three two one" and 3017 is represented by "seven one zero three"</p>
+        <form id="problem13">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem13()">
+        </form>
+        <div class="result" id="result13">Result: </div>
+        <h1>Problem #14</h1>
+        <p>Write a program to sum the digits in a number and print it. For example, the sum of the digits in 347 is 14.</p>
+        <form id="problem14">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem14()">
+        </form>
+        <div class="result" id="result14">Result: </div>
+        <h1>Problem #15</h1>
+        <p>Write a program that will determine if the input number is a palindrome or not. A number is a palindrome that produces the same number when it is reversed.</p>
+        <form id="problem15">
+            <label for="first-number">Enter a Number</label>
+            <input type="number" name="first-number">
+            <input type="button" value="Submit" onclick="problem15()">
+        </form>
+        <div class="result" id="result15">Result: </div>
+        <h1>Problem #16</h1>
+        <p style="white-space: pre-wrap">Write a program that will accept a string and output the word per line. For example an input of "The world is beautiful."
+        the
+        world
+        is
+        beautiful
+        </p>
+        <form id="problem16">
+            <label for="first-number">Enter sentence</label>
+            <input type="text" name="first-number">
+            <input type="button" value="Submit" onclick="problem16()">
+        </form>
+        <div class="result" id="result16">Result: </div>
+        <h1>Problem #17</h1>
+        <p>Write a program that will accept a string and output the letter per line.</p>
+        <form id="problem17">
+            <label for="first-number">Enter sentence</label>
+            <input type="text" name="first-number">
+            <input type="button" value="Submit" onclick="problem17()">
+        </form>
+        <div class="result" id="result17">Result: </div>
+        <h1>Problem #18</h1>
+        <p style="white-space: pre-wrap">Write a program that takes nouns and forms their plurals on the basis of these rules:
+        a. if a noun ends in "y", remove the "y" and add "ies" 
+        b. if a noun ends in "s", "ch", or "sh" add "es" 
+        c. in all other cases, just add "s"</p>
+        <form id="problem18">
+            <label for="first-number">Enter word</label>
+            <input type="text" name="first-number">
+            <input type="button" value="Submit" onclick="problem18()">
+        </form>
+        <div class="result" id="result18">Result: </div>
+        <h1>Problem #19</h1>
+        <p>Write a simple encryption program using string function, which apply the substitutions method. Here is the given substitution table.</p>
+        <table>
+            <thead>
+                <tr>
+                    <td>Letter equivalent</td>
+                    <td>Letter equivalent</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>A = !</td>
+                    <td>N = |</td>
+                </tr>
+                <tr>
+                    <td>B = "</td>
+                    <td>O = [</td>
+                </tr>
+                <tr>
+                    <td>C = #</td>
+                    <td>P = \</td>
+                </tr>
+                <tr>
+                    <td>D = $</td>
+                    <td>Q = ]</td>
+                </tr>
+                <tr>
+                    <td>E = %</td>
+                    <td>R = ^</td>
+                </tr>
+                <tr>
+                    <td>F = &</td>
+                    <td>S = _</td>
+                </tr>
+                <tr>
+                    <td>G = '</td>
+                    <td>T = :</td>
+                </tr>
+                <tr>
+                    <td>H = (</td>
+                    <td>U = ;</td>
+                </tr>
+                <tr>
+                    <td>I = )</td>
+                    <td>V = <</td>
+                </tr>
+                <tr>
+                    <td>J = ,</td>
+                    <td>W = =</td>
+                </tr>
+                <tr>
+                    <td>K = .</td>
+                    <td>X = ></td>
+                </tr>
+                <tr>
+                    <td>L = -</td>
+                    <td>Y = ?</td>
+                </tr>
+                <tr>
+                    <td>M = }</td>
+                    <td>Z = @</td>
+                </tr>
+            </tbody>
+        </table>
+        <form id="problem19">
+            <label for="first-number">Enter word</label>
+            <input type="text" name="first-number">
+            <input type="button" value="Encrypt" onclick="problem19()">
+            <input type="button" value="Decrypt" onclick="decrypt()">
+        </form>
+        <div class="result" id="result19">Result: </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
