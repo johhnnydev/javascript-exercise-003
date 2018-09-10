@@ -47,6 +47,7 @@ function problem3(){
     if((firstNumber && secondNumber) && (firstNumber > 0 && secondNumber > 0)){
         // keep subtracting the secondNumber
         // until the secondNumber is greater than the firstNumber
+        // after this whatever is the value of the firstNumber will be the remainder
         while(flag){
             if(secondNumber > firstNumber){
                 flag = false;
@@ -55,13 +56,17 @@ function problem3(){
                 qoutient++;
             }
         }
-        // after this whatever is the value of the firstNumber will be the remainder
         result.innerHTML = "Result: Qoutient: " + qoutient + " Remainder: " + firstNumber;
         console.log("Qoutient: " + qoutient, "Remainder: " + firstNumber);
     }else{
         result.innerHTML = "Result: Valid values only.";
     }
 }
+
+// This solution is not mine.
+// I already forgot where I exactly got this.
+// I think this is where I got this
+// https://stackoverflow.com/questions/46490253/printing-prime-numbers-between-a-range-from-slider-input
 function generatePrimes(minValue, maxValue){
     let primes = [];    
     while ( minValue < maxValue ) {
@@ -83,13 +88,13 @@ function generatePrimes(minValue, maxValue){
    }
    return primes;
 }
+
 function problem4(){
     let form = document.querySelectorAll("#problem4");
     let firstNumber = parseInt(form[0][0].value);
     let secondNumber = parseInt(form[0][1].value);
     let result = document.getElementById("result4");
     let primeGenRes = generatePrimes(firstNumber, secondNumber); 
-    console.log(generatePrimes(firstNumber, secondNumber));
     result.innerHTML = "Primes: " + primeGenRes.join(", ") + " Sum of primes: " +  primeGenRes.reduce((a,b) => a+b, 0);
 }
 function fibonacci (n) {
@@ -111,6 +116,9 @@ function problem5(){
         result.innerHTML = "Result: Input must be a positive number and not empty.";
     }
 }
+// Not my solution
+// I got this here
+// https://medium.freecodecamp.org/how-to-factorialize-a-number-in-javascript-9263c89a4b38
 function factorialize(num){
     if(num<=0){return 1;}
     return num*(factorialize(num-1));
@@ -121,6 +129,7 @@ function problem6(){
     let result = document.getElementById("result6");
     result.innerHTML = "Result: " + factorialize(firstNumber); 
 }
+// Not my solution
 function isPerfect(n){
     let sum = 1;
     let i = 2;
@@ -150,10 +159,11 @@ function problem8(){
     for(let i = 1; i <= firstNumber; i++){
         arr.push(i);
     }
-    console.log(arr.join(" + "));
-    console.log(arr.reduce((a,b) => a+b, 0));
     result.innerHTML = "Result: " + arr.join(" + ") + " = " + arr.reduce((a,b) => a+b, 0); 
 }
+// I really don't understand this problem
+// but I think this qoura thread got it right
+// https://www.quora.com/If-1-11-2-22-3-33-4-44-5-55-6-66-7-77-then-11
 function problem9(){
     let form = document.querySelectorAll("#problem9");
     let firstNumber = parseInt(form[0][0].value);
@@ -163,7 +173,6 @@ function problem9(){
         arr.push(i);
     }
     result.innerHTML = "Result: " + arr.join(" + ") + " = " + (firstNumber + (firstNumber * 10));
-    console.log(arr.join(" + "), firstNumber + (firstNumber * 10));
 }
 
 // (1^1+2^2+3^3+4^4 = 288)
@@ -176,25 +185,24 @@ function problem10(){
         total += Math.pow(i, i); 
     }
     result.innerHTML = "Result: " + total; 
-    console.log(total);
 }
 function problem11(){
     let form = document.querySelectorAll("#problem11");
     let firstNumber = form[0][0].value;
     let result = document.getElementById("result11");
     let arr = firstNumber.split("");
-    // console.log(arr.reverse());
     result.innerHTML = "Result: " + arr.reverse().join("");
 }
+
+// if you got more elegant solution to this
+// then notify me.
 function problem12(){
     let form = document.querySelectorAll("#problem12");
     let firstNumber = form[0][0].value;
     let result = document.getElementById("result12");
     let arr = firstNumber.split("");
-    // let ref = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"]
     let res = [];
     for(let i = 0; i < arr.length; i++){
-        // console.log(arr[i]);
         switch(arr[i]){
             case "0":
                 res.push("zero");
@@ -230,8 +238,6 @@ function problem12(){
                 console.log("DO NOTHING")
         }
     }
-    // console.log(res.join(" "));
-    // console.log(arr.reverse());
     result.innerHTML = "Result: " + res.join(" ");
 }
 function problem13(){
@@ -278,8 +284,6 @@ function problem13(){
                 console.log("DO NOTHING")
         }
     }
-    // console.log(res.join(" "));
-    // console.log(arr.reverse());
     result.innerHTML = "Result: " + res.join(" ");
 }
 function problem14(){
@@ -294,9 +298,6 @@ function problem15(){
     let firstNumber = form[0][0].value;
     let result = document.getElementById("result15");
     let arr = firstNumber.split("");
-    // console.log(firstNumber);
-    console.log(firstNumber == arr.map(x => parseInt(x)).reverse().join(""));
-    // console.log(arr.map(x => parseInt(x)).reverse().join(""));
     result.innerHTML = firstNumber == arr.map(x => parseInt(x)).reverse().join("") ? "Result: " + firstNumber + " is a palindrome." : "Result: " + firstNumber + " is not a palindrome.";
 }
 function problem16(){
@@ -304,7 +305,6 @@ function problem16(){
     let sentence = form[0][0].value;
     let result = document.getElementById("result16");
     let wordArr = sentence.split(" ").join("<br>");
-    console.log(wordArr);
     result.innerHTML = "Result:<br>" + wordArr;
 }
 function problem17(){
@@ -313,7 +313,6 @@ function problem17(){
     let result = document.getElementById("result17");
     let wordArr = sentence.split("").join("<br>");
     result.innerHTML = "Result:<br>" + wordArr;
-    // console.log(wordArr);
 }
 function problem18(){
     let form = document.querySelectorAll("#problem18");
@@ -331,6 +330,10 @@ function problem18(){
         result.innerHTML = "Result: " + (word + "s");
     }
 }
+
+// Obiously not my solution
+// here is where I got it
+// https://medium.com/@TimSeverien/substitution-cipher-in-javascript-d530eb2d923d
 var Cipher = {}; // initiate namespace
 Cipher.toQWERTY = function(text, decode) {
     // ABCDEF to QWERTY map
