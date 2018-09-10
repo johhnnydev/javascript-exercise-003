@@ -45,12 +45,14 @@ function problem3(){
     // 1. are present
     // 2. greater than zero
     if((firstNumber && secondNumber) && (firstNumber > 0 && secondNumber > 0)){
+        // keep subtracting the secondNumber
+        // until the secondNumber is greater than the firstNumber
         while(flag){
-            if(!(firstNumber < secondNumber)){
+            if(secondNumber > firstNumber){
+                flag = false;
+            }else{
                 firstNumber -= secondNumber;
                 qoutient++;
-            }else{
-                flag = false;
             }
         }
         // after this whatever is the value of the firstNumber will be the remainder
