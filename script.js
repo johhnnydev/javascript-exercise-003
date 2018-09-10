@@ -248,7 +248,6 @@ function problem13(){
     arr = arr.reverse();
     let res = [];
     for(let i = 0; i < arr.length; i++){
-        // console.log(arr[i]);
         switch(arr[i]){
             case "0":
                 res.push("zero");
