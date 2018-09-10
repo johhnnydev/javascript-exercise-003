@@ -1,15 +1,9 @@
 function problem1(){
     let form = document.querySelectorAll("#problem1");
     let result = document.querySelectorAll("#result1");
-    console.log(form);
-    console.log(form[0][0].value, form[0][1].value); // fnum, snum
-    console.log(result);
-
-    // Convert input values from String to Int
     let firstNumberInt = parseInt(form[0][0].value);
     let secondNumberInt = parseInt(form[0][1].value);
     
-    console.log(firstNumberInt, secondNumberInt);
     // check if both fields if empty, 0, or negative
     // if all of the checks failed goto else
     if((firstNumberInt && secondNumberInt) && (firstNumberInt > 0 && secondNumberInt > 0)){
@@ -21,14 +15,14 @@ function problem1(){
         result[0].innerHTML = "Result: Both fields must be both not empty and positive";
     }
 }
+
 function problem2(){
     let form = document.querySelectorAll("#problem2");
-    console.log(form);
     let result = document.querySelectorAll("#result2");
-    console.log(result);
+
     let firstNumberInt = Math.abs(parseInt(form[0][0].value));
     let secondNumberInt = Math.abs(parseInt(form[0][1].value));
-    console.log(firstNumberInt, secondNumberInt);
+
     if((firstNumberInt && secondNumberInt)){
         for(let i = 0; i < secondNumberInt; i++){
             firstNumberInt += firstNumberInt;
@@ -38,14 +32,18 @@ function problem2(){
         result[0].innerHTML = "Result: Both fields must be both not empty";
     }
 }
+
 function problem3(){
     let form = document.querySelectorAll("#problem3");
     let firstNumber = parseInt(form[0][0].value);
     let secondNumber = parseInt(form[0][1].value);
     let result = document.getElementById("result3");
     let qoutient = 0;
-    console.log("First Number: " + firstNumber, "Second Number: " + secondNumber);
-    let flag = true;    
+    let flag = true;
+    
+    // True if values of firstNumber and secondNumber 
+    // 1. are present
+    // 2. greater than zero
     if((firstNumber && secondNumber) && (firstNumber > 0 && secondNumber > 0)){
         while(flag){
             if(!(firstNumber < secondNumber)){
