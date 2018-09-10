@@ -14,6 +14,7 @@ Write a program that will compute the qoutient (including the remainder) of two 
 
 ### Question #4
 [This is where I got this, I think](https://stackoverflow.com/questions/46490253/printing-prime-numbers-between-a-range-from-slider-input)
+
 Write a program that will add all prime number by letting the user specify the range of number to process.
 
 ### Question #5
@@ -21,6 +22,7 @@ Write a program that gets the Fibonacci of a number read from the user. The Fibo
 
 ### Question #6
 [Not my solution](https://medium.freecodecamp.org/how-to-factorialize-a-number-in-javascript-9263c89a4b38)
+
 Write a program that will compute for the factorial of a supplied number. The factorial of the number if the product of those numbers starting from 1 to supplied number.
 
 ### Question #7
@@ -32,6 +34,7 @@ Write a program that will derive the sum of series of a number. For example, an 
 
 ### Question #9
 [Not sure of this solution](https://www.quora.com/If-1-11-2-22-3-33-4-44-5-55-6-66-7-77-then-11)
+
 Write a program that will derive the sum of series of number. For example, an input of 5 will produce "55(1 + 2 + 3 + 4 + 5 = 55)"
 
 ### Question #10
@@ -67,4 +70,5 @@ Write a program that takes nouns and forms their plurals on the basis of these r
 
 ### Question #19
 [Not my solution](https://medium.com/@TimSeverien/substitution-cipher-in-javascript-d530eb2d923d)
+
 Write a simple encryption program using string function, which apply the substitutions method. Here is the given substitution table
