@@ -1,5 +1,5 @@
 # JavaScript Exercise 003
-My beginner answers to the challenges that we're given to us in our JavaScript subject. Also, if you have any criticisms or suggestions feel free to notify me so I can work on it as soon as I can. :smiley: 
+My answers (some of them are mine some of them are not) to the challenges that we're given to us in our JavaScript subject. Also, if you have any criticisms or suggestions feel free to notify me so I can work on it as soon as I can. :smiley: 
 
 ### Question #1
 Write a program that will compute the product of two positive integers (firstno and secondno) by adding them repeatedly. This means adding firstno to itself secondno times.
